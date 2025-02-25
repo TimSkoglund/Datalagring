@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories;
 
-public class CustomerRepositories(DataContext context)  
+public class CustomerRepositories(DataContext context) : BaseRepository<Entities.CustomerEntity>(context)
 {
-    private readonly DataContext _context = context;
-    
+    public CustomerRepositories(DataContext context) : base(context)
+    {
+    }
+
     //CREATE
 
     //READ
@@ -28,3 +30,5 @@ public class CustomerRepositories(DataContext context)
     }
 
 }
+
+//5:00
