@@ -1,9 +1,9 @@
 using Data.Context;
-using Data.Entities;
 
-namespace Data.Repositories
+namespace Data.Repositories;
 
 
-    public class ProjektRepositories(DataContext context) : BaseRepository<Entities.ProjekEntity>(context)
+public class ProjektRepositories(DataContext context) : BaseRepository<Entities.ProjectEntity>(context)
 {
-	}
+
+}

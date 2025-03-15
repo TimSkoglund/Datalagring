@@ -1,14 +1,12 @@
-using Busniess.Services;
-
 namespace Presentation.ConsoleApp;
 
-public class MenuDialogs(CustomerSercie customerserice, ProcectService projektSerice)
+public class MenuDialogs(CustomerService customerserice, ProjectService projektSerice)
 {
     private readonly CustomerService _customerService;
-    private readonly ProjectService _projectService;    
-    
+    private readonly ProjectService _projectService;
 
-public async Task MenuOptions()
+
+    public async Task MenuOptions()
     {
         while (true)
         {

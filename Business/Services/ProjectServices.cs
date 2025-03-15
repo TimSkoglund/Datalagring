@@ -1,5 +1,5 @@
 namespace Business.Services;
 
-    public class ProjectServices
-    {
-    }
+public class ProjectServices
+{
+}

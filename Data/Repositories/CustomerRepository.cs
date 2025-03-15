@@ -1,15 +1,19 @@
 ﻿using Data.Context;
+using Data.Entities;
+using Data.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories;
 
-public class CustomerRepositories(DataContext context) : BaseRepository<Entities.CustomerEntity>(context)
+public class CustomerRepository(DataContext context) : BaseRepository<Entities.CustomerEntity>(context), ICustomerRepository
 {
-    public CustomerRepositories(DataContext context) : base(context)
-    {
-    }
+
 
     //CREATE
+    public async Task AddAsync(CustomerEntity customerEntity)
+    {
+        throw new NotImplementedException();
+    }
 
     //READ
 

@@ -1,12 +1,5 @@
-﻿using Business.services;
-using Data.Context;
-using Data.Repository;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-
-var services = new ServiceCollection();
-
-    .AddDpContext<Datacontext>(x => x.UseSqlServer())
+﻿var services = new ServiceCollection()
+    .AddDpContext<DataContext>(x => x.UseSqlServer())
     .AddScoped<CustomerRepository>()
     .Addscoped<ProjektRepository>()
     .AddScoped<CustomerService>()

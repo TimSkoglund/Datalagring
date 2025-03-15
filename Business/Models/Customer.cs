@@ -3,6 +3,7 @@ namespace Business.Models
     public class Customer
     {
         public int Id { get; set; }
-        public string CustomerName { get; set; } = null!;
+        public int CustomerId { get; set; }
+        public string Name { get; set; } = null!;
     }
 }
